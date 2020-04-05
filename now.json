@@ -1,4 +1,9 @@
 {
   "version": 2,
-  "routes": []
+  "routes": [
+    {
+      "src": "/ingress.yml",
+      "dest": "https://raw.githubusercontent.com/ondrejsika/kubernetes-ingress-traefik/master/ingress-traefik.yml"
+    }
+  ]
 }
