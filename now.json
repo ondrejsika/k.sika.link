@@ -2,6 +2,11 @@
   "version": 2,
   "routes": [
     {
+      "src": "/rook-ceph-1.3/(?<path>[^/][^/]*)",
+      "dest": "https://raw.githubusercontent.com/rook/rook/release-1.3/cluster/examples/kubernetes/ceph/$path"
+
+    },
+    {
       "src": "/ingress.yml",
       "dest": "https://raw.githubusercontent.com/ondrejsika/kubernetes-ingress-traefik/master/ingress-traefik.yml"
     }
