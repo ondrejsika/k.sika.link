@@ -2,8 +2,8 @@
   "version": 2,
   "routes": [
     {
-      "src": "/rook-ceph-1.3/(?<path>[^/][^/]*)",
-      "dest": "https://raw.githubusercontent.com/rook/rook/release-1.3/cluster/examples/kubernetes/ceph/$path"
+      "src": "/rook-ceph-(?<major>\\d+).(?<minor>\\d+)/(?<path>[^/][^/]*)",
+      "dest": "https://raw.githubusercontent.com/rook/rook/release-$major.$minor/cluster/examples/kubernetes/ceph/$path"
 
     },
     {
