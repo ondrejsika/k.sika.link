@@ -2,7 +2,7 @@
   "version": 2,
   "routes": [
     {
-      "src": "/rook-ceph-(?<major>\\d+).(?<minor>\\d+)/(?<path>[^/][^/]*)",
+      "src": "/rook-ceph-(?<major>\\d+).(?<minor>\\d+)/(?<path>[a-zA-Z0-9._/-]+)",
       "dest": "https://raw.githubusercontent.com/rook/rook/release-$major.$minor/cluster/examples/kubernetes/ceph/$path"
 
     },
